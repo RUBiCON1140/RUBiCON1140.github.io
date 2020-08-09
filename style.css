@@ -75,15 +75,15 @@ text-transform: uppercase;
     }
 
     .name {
-        font-size: 7vw;
+        font-size: 9vw;
     }
     
     .shortInfo{
-    font-size: 3vw;
+    font-size: 4vw;
     }
     
     .tagline {
-    font-size: 6vw;
+    font-size: 7vw;
     }
 }
 
