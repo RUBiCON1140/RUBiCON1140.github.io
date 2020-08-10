@@ -5,14 +5,12 @@
     src: local('DINPro Light'), url('assets/font/DINPro-Light.woff') format('woff');
 }
 
-
 @font-face {
     font-family: 'DINPro Medium';
     font-style: normal;
     font-weight: normal;
     src: local('DINPro Medium'), url('assets/font/DINPro-Medium.woff') format('woff');
 }
-
 
 @font-face {
     font-family: 'DINPro Bold';
@@ -68,6 +66,7 @@ img {
     transform: translate(-50%,-50%);
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 }
+
 .sharnir {
     width: 100%;
     height: inherit;
@@ -149,4 +148,9 @@ text-transform: uppercase;
     to {
             -webkit-transform: rotate(359deg);
     }
+}
+
+.unselectable {
+    -moz-user-select:none;
+    -webkit-user-select:none;
 }
