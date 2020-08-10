@@ -21,13 +21,13 @@
     src: local('DINPro Bold'), url('assets/font/DINPro-Bold.woff') format('woff');
 }
 
-
 @font-face {
     font-family: 'DINPro Black';
     font-style: normal;
     font-weight: normal;
     src: local('DINPro Black'), url('assets/font/DINPro-Black.woff') format('woff');
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -50,9 +50,30 @@ body {
     box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
 }
 
+.logo{
+    margin: 0 auto;
+    position: relative;
+}
+
 img {
-  width: 10%;
+  width: 10vw;
   height: auto;
+}
+
+.sharnirContainer{
+    width: 10vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+.sharnir {
+    width: 100%;
+    height: inherit;
+    transform-origin: 50% 39.8%;
+    animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 3s infinite linear;
 }
 
 .name {
@@ -75,9 +96,28 @@ text-transform: uppercase;
         padding: 20vw 10vw;
     }
 
+    .logo{
+        margin: 0 auto;
+        position: relative;
+    }
+    
     img {
-        width: 30%;
-        height: auto;
+      width: 25vw;
+      height: auto;
+    }
+    
+    .sharnirContainer{
+        width: 25vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    }
+
+    .sharnir {
+        width: 100%;
+        height: inherit;
     }
 
     .name {
@@ -93,3 +133,20 @@ text-transform: uppercase;
     }
 }
 
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
