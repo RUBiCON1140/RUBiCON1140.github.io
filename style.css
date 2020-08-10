@@ -46,6 +46,8 @@ body {
     transform: translate(-50%,-50%);
     width: 60vw;
     text-align: center;
+    padding: 3vw;
+    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.5);
 }
 
 img {
@@ -68,7 +70,11 @@ text-transform: uppercase;
 
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:500px) {
+    .container {
+        padding: 20vw 10vw;
+    }
+
     img {
         width: 30%;
         height: auto;
