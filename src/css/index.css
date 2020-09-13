@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Michroma Regular'), url('../assets/font/Michroma.woff') format('woff');
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Michroma", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
